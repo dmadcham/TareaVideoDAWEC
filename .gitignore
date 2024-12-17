@@ -1,0 +1,22 @@
+# Node modules 
+node_modules/
+
+# Archivos de configuración de paquetes
+package-lock.json
+
+# Archivos de compilación y salida 
+dist/
+build/
+
+# Documentación generada
+docs/
+out/
+
+# Archivos de configuración del editor
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

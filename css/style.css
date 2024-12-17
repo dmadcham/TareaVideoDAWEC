@@ -1,133 +1,138 @@
 /* Estilos globales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #1e1e1e, #3c3c3c);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3c3c3c);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Contenedor principal */
+.video-player {
+  width: 80%;
+  max-width: 700px;
+  background: #282828;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-info {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.song-info p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.song-info .title {
+  color: #ddd;
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  background: #000;
+  border-bottom: 3px solid #444;
+}
+
+video {
+  width: 100%;
+  border-bottom: 3px solid #555;
+  display: block;
+  border-radius: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(transparent, rgba(0, 0, 0, 0.4));
+}
+
+/* Controles */
+.controls {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.control-button:hover {
+  color: #777;
+}
+
+/* Barra de volumen */
+.volume-slider {
+  margin: 0 15px;
+  flex: 1;
+  max-width: 120px;
+}
   
-  /* Contenedor principal */
-  .audio-player {
-    width: 90%;
-    max-width: 500px;
-    background: #282828;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* Información de la canción */
-  .song-info {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Asegura que los elementos estén centrados horizontalmente */
-    margin-bottom: 15px;
-  }
-  
-  #thumbnail {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    margin-right: 15px;
-    object-fit: cover;
-  }
-  
-  .song-details {
-    text-align: left; /* Centra el texto del nombre de la canción y el artista a la izquierda */
-  }
-  
-  .song-details h2 {
-    font-size: 18px;
-    margin: 0;
-    color: #fff;
-  }
-  
-  .song-details p {
-    font-size: 14px;
-    color: #bbb;
-  }
-  
-  /* Controles */
-  .controls {
-    display: flex;
-    justify-content: center; /* Asegura que los botones estén centrados horizontalmente */
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .control-button {
-    background: #444;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 50%;
-    padding: 12px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin: 0 5px;
-  }
-  
-  .control-button:hover {
-    background: #666;
-  }
-  
-  /* Barra de volumen */
-  .volume-slider {
-    margin-left: 15px;
-    width: 120px;
-    cursor: pointer;
-  }
-  
-  /* Barra de progreso */
-  .progress-container {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .progress-bar {
-    flex: 1;
-    margin: 0 10px;
-    appearance: none;
-    background: #555;
-    border-radius: 5px;
-    height: 5px;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  .progress-bar::-webkit-slider-thumb {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-  }
-  
-  .progress-bar::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  /* Tiempo */
-  #current-time, #duration {
-    font-size: 14px;
-    color: #bbb;
-  }
-  
+/* Barra de progreso */
+.progress-bar {
+  width: 100%;
+  margin: 15px 0;
+  appearance: none;
+  background: #555;
+  border-radius: 5px;
+  height: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Tiempo */
+.time {
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: 15px;
+  color: #bbb;
+}

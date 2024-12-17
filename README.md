@@ -1,5 +1,23 @@
 # Tarea 3 - Reproducción de video
 
+# Índice
+1. [Enunciado](#enunciado)
+    - [Requisitos](#requisitos)
+        1. [HTML](#1-html)
+        2. [CSS](#2-css)
+        3. [JavaScript](#3-javascript)
+        4. [Mejoras Adicionales (Opcionales)](#4-mejoras-adicionales-opcional)
+    - [Entrega](#entrega)
+    - [Puntuación](#puntuación)
+2. [Manual de Usuario](#manual-de-usuario)
+   - [Documentación](#documentación)
+   - [Cómo Usar](#como-usar)
+     - [Reproducción](#reproducción)
+     - [Volumen](#volumen)
+     - [Visualización](#visualizacion)
+
+---
+
 # Enunciado
 
 El objetivo de esta tarea es crear un reproductor musical básico utilizando HTML, CSS y JavaScript. El reproductor debe incluir las funcionalidades esenciales de control de la música, como reproducción, pausa, detención, control de volumen, muteo, visualización del tiempo de la pista, y debe ofrecer mejoras visuales e interactivas.
@@ -53,3 +71,31 @@ Subir el archivo comprimido con los siguientes archivos:
     - Comentarios: 1 ptos
 - Mejoras: 2 ptos
 - Manual de usuario: 1 ptos (Portada descriptiva, índice standard, español e inglés, datos del autor y/o la empresa).
+
+# Manual de usuario
+
+## Documentación
+
+Para acceder a la página de documentación del proyecto:
+- `docs/index.html` para ver la página de "inicio" de la documentación
+- `docs/global.html` para ver la página principal
+- `docs/script.js.html` para ver el código del **Script**
+
+
+## Como usar
+
+El reproductor musical (con vídeo) contiene varios botones y otros elementos con los que interactuar
+
+### Reproducción
+
+- `Reanudar/Play` Si el vídeo está pausado, el botón de la izquierda será un botón de ***play*** (flecha derecha). Al pulsar este botón, el vídeo se empezará a reproducir.
+- `Pausar` Si el vído se está reproduciendo, el botón de *play* será un botón de ***pause*** (2 barras verticales). Al pulsar este botón, el vídeo se pausará, al reanudarlo seguirá desde donde se pausó.
+- `Parar/Stop` Este botón está situado a la derecha del *play/pause*. Al pulsar el botón de ***stop*** (cuadrado), el vídeo dejará de reproducirse, al volver a reproducirlo, este empezará desde el principio.
+
+### Volumen
+- `Silenciar/Mute` Si el vídeo no está silenciado, el botón lo indicará por su apariencia (bocina con sonido). Al pulsar este botón, el sonido del vídeo dejará de escucharse y el botón pasará a estar **tachado**.
+- `Quitar Silencio/Unmute` Si el vídeo está silenciado, el botón estará tachado. Al pulsar este botón, el sonido volverá a escucharse al nivel establecido por la *barra de volumen* .
+- `Barra de volumen` Puedes mover esta barra situada a la izquierda del botón de *silenciar* para modificar el voúmen de la canción.
+
+### Visualizacion
+- `Pantalla Completa` Si se pulsa este botón, situado a la derecha de la *barra de volumen*, el vídeo se reproducirá en pantalla completa. Para salir de este "modo" pulsar el botón que aparece abajo a la derecha (a la derecha del volumen en pantalla completa).
