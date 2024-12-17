@@ -1,0 +1,10 @@
+{ 
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "scripts": {
+    "docs": "jsdoc js/script.js --template node_modules/clean-jsdoc-theme --destination docs"
+  },
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.3.0"
+  }
+}
