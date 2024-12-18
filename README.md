@@ -98,4 +98,4 @@ El reproductor musical (con vídeo) contiene varios botones y otros elementos co
 - `Barra de volumen` Puedes mover esta barra situada a la izquierda del botón de *silenciar* para modificar el voúmen de la canción.
 
 ### Visualizacion
-- `Pantalla Completa` Si se pulsa este botón, situado a la derecha de la *barra de volumen*, el vídeo se reproducirá en pantalla completa. Para salir de este "modo" pulsar el botón que aparece abajo a la derecha (a la derecha del volumen en pantalla completa).
+- `Pantalla Completa` Si se pulsa este botón, situado a la derecha de la *barra de volumen*, el vídeo se reproducirá en pantalla completa.
